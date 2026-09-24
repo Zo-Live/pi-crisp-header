@@ -2,12 +2,31 @@
   "name": "pi-startup-header",
   "version": "1.0.0",
   "description": "A Claude Code-inspired startup header for pi",
-  "keywords": ["pi-package"],
+  "keywords": [
+    "pi-package"
+  ],
   "pi": {
-    "extensions": ["./extensions/pi-startup-header.ts"]
+    "extensions": [
+      "./extensions/pi-startup-header.ts"
+    ]
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-tui": "*"
-  }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zo-Live/pi-startup-header.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zo-Live/pi-startup-header/issues"
+  },
+  "homepage": "https://github.com/Zo-Live/pi-startup-header#readme"
 }
