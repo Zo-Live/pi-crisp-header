@@ -1,0 +1,13 @@
+{
+  "name": "pi-startup-header",
+  "version": "1.0.0",
+  "description": "A Claude Code-inspired startup header for pi",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./extensions/pi-startup-header.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
