@@ -71,7 +71,7 @@ function renderIcon(theme: Theme): string[] {
 }
 
 function renderInstructions(theme: Theme, thinkingColor: (text: string) => string): string[] {
-	const separator = theme.fg("muted", " · ");
+	const separator = theme.fg("dim", " · ");
 	return [
 		`${theme.bold(thinkingColor("pi"))}${theme.fg("dim", ` v${VERSION}`)}`,
 		[

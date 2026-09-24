@@ -1,4 +1,4 @@
-# Pi startup header
+# Pi crisp header
 
 这个插件把 Pi 的启动头改成 Claude Code 风格：左侧显示 `pi.svg` 图标，右侧显示 Pi 版本和两行快捷键提示。
 
@@ -11,13 +11,42 @@
 在此目录运行：
 
 ```bash
-pi install ./pi-startup-header
+pi install .
 ```
 
 之后重新启动 Pi 即可。如果只想临时试用：
 
 ```bash
-pi --extension ./pi-startup-header/extensions/pi-startup-header.ts
+pi --extension ./extensions/pi-crisp-header.ts
+```
+
+发布到 npm 后，使用包名和版本安装：
+
+```bash
+pi install npm:pi-crisp-header@1.0.0
+```
+
+Pi 使用 `package.json` 中的 `pi.extensions` 声明扩展入口，不需要额外的 `plugin.json`。
+
+## 开发与发布
+
+安装开发依赖并运行类型检查：
+
+```bash
+npm install
+npm test
+```
+
+发布前检查 npm 压缩包内容：
+
+```bash
+npm pack --dry-run
+```
+
+确认包名、版本和 npm 登录状态后发布：
+
+```bash
+npm publish --access public
 ```
 
 图标颜色直接从 `assets/pi.svg` 读取；Windows Terminal 等不支持终端图片协议的环境使用同一 SVG 几何形状的彩色块渲染。
