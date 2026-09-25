@@ -20,7 +20,7 @@ pi install .
 pi --extension ./extensions/pi-crisp-header.ts
 ```
 
-发布到 npm 后，使用包名安装（默认获取最新版本，不加版本号即不锁定版本）：
+可使用 npm 安装：
 
 ```bash
 pi install npm:pi-crisp-header
